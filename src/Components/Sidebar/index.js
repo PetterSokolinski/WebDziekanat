@@ -16,6 +16,10 @@ const StyledSidebar = styled.div`
     }
 `
 
+const StyledBack = {
+    background: "#db3d44"
+}
+
 class Sidebar extends Component {
     constructor(props) {
         super(props);
@@ -58,7 +62,7 @@ class Sidebar extends Component {
                 }} />
                 }
                 <SideNav.Nav defaultSelected="home">
-                    <NavItem eventKey="home">
+                    <NavItem eventKey="home" style={StyledBack}>
                         <NavIcon>
                             <Icon name="home" style={{ fontSize: '1.75em' }} />
                         </NavIcon>
@@ -66,7 +70,7 @@ class Sidebar extends Component {
                             Home
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="timetables">
+                    <NavItem eventKey="timetables" style={StyledBack}>
                         <NavIcon>
                             <Icon className="calendar alternate" style={{ fontSize: '1.75em' }} />
                         </NavIcon>
@@ -74,7 +78,7 @@ class Sidebar extends Component {
                             Timetables
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="grades">
+                    <NavItem eventKey="grades" style={StyledBack}>
                         <NavIcon>
                             <Icon className="pencil alternate" style={{ fontSize: '1.75em' }} />
                         </NavIcon>
@@ -82,7 +86,7 @@ class Sidebar extends Component {
                             Grades
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="forms">
+                    <NavItem eventKey="forms" style={StyledBack}>
                         <NavIcon>
                             <Icon className="wpforms" style={{ fontSize: '1.75em' }} />
                         </NavIcon>
@@ -90,7 +94,7 @@ class Sidebar extends Component {
                             Forms
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="importantinfo">
+                    <NavItem eventKey="importantinfo" style={StyledBack}>
                         <NavIcon>
                             <Icon className="info" style={{ fontSize: '1.75em' }} />
                         </NavIcon>
@@ -98,7 +102,7 @@ class Sidebar extends Component {
                             Important Information
                         </NavText>
                     </NavItem>
-                    <NavItem eventKey="personaldata">
+                    <NavItem eventKey="personaldata" style={StyledBack}>
                         <NavIcon>
                             <Icon className="user" style={{ fontSize: '1.75em' }} />
                         </NavIcon>
